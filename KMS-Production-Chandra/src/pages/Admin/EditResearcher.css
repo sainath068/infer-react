@@ -1,0 +1,145 @@
+.Edit-Researcher{
+  margin: 0 2%;
+
+}
+.edit-researcher-header {
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+    margin-bottom: 1rem;
+  }
+  select:not(:-internal-list-box) {
+    height: 40px; /* Set the default height for the non-expanded select box */
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  /* Adjust the options dropdown when expanded */
+  select {
+    max-height: 120px; /* Limit the dropdown height when expanded */
+    overflow-y: auto; /* Enable scrolling for dropdown options */
+  }
+  .back-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #2d79f3;
+    cursor: pointer;
+  }
+  
+  .edit-researcher-form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .User-Form-Row{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+ .User-Form-Row-Items{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+  }
+
+  .edit-researcher-form label {
+    display: flex;
+    font-weight: 600;
+  }
+  
+  .edit-researcher-form input,
+  .edit-researcher-form select {
+    width: 96%;
+    padding: 12px 0 12px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+  }
+  .edit-researcher-form select{
+    width: 100%;
+  }
+  .edit-researcher-form .password-field {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  .edit-researcher-form .password-field input{
+    border: none;
+    outline: none;
+  }
+  .form-actions {
+    gap: 15px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .cancel-button {
+    background: none;
+    border: 1px solid #ddd;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .edit-button {
+    background-color: #2d79f3;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  @media (min-width: 0px) and (max-width: 576px){
+    .Edit-Researcher{
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 81px 0px;
+
+    }
+    .edit-researcher-form {
+      width:auto;
+  }
+  .edit-researcher-header{
+    padding: 15px;
+  }
+  .User-Form-Row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.User-Form-Row-Items {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 10px;
+}
+.form-actions {
+  margin: 20px;
+}
+}
+@media screen and (min-width: 576px) and (max-width: 992px){
+  .Edit-Researcher{
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 81px 0px;
+
+  }
+  .edit-researcher-header{
+    padding: 15px;
+  }
+  .edit-researcher-form {
+    width: 95%;
+    padding: 15px;
+
+  }
+  .form-actions {
+    margin: 20px;
+  }
+
+}

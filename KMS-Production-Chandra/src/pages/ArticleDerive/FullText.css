@@ -1,0 +1,120 @@
+.full-text-container{
+  padding: 20px;
+  font-family: Manrope, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #333;
+}
+
+.inputField {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.full-text-content {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.highlightLink {
+  color: #1a73e8;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.highlightEmail {
+  color: #d32f2f;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+h1 {
+  color: black;
+  text-align: start;
+}
+
+h2 {
+  color: black;
+  text-align: start;
+}
+
+h3 {
+  color: black;
+  text-align: start;
+}
+
+h4 {
+  color: black;
+  text-align: start;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #0071bc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  text-align: left;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+.metadataBox {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.metadataHeading {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  background-color: #e0e0e0;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.metadataContent {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.metadataDivision {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.metadataDivision:last-child {
+  border-bottom: none;
+}
+
+.highlightColon {
+  font-weight: bold;
+  color: #000;
+}

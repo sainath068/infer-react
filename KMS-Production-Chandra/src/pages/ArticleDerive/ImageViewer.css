@@ -1,0 +1,77 @@
+.image-viewer {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .preview-image {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .zoom-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  
+  .download-links {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .download-links a {
+    margin: 0 5px;
+    color: #0073e6;
+    text-decoration: none;
+  }
+  
+  .image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: relative;
+    text-align: center;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .zoom-controls {
+    margin-top: 10px;
+  }
+  
+  .zoom-controls button {
+    margin: 5px;
+  }
+  

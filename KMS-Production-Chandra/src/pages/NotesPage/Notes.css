@@ -1,0 +1,10 @@
+.notes-manager {
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+.notes-manager-content {
+  width: 100%;
+  overflow-y: auto;
+  background: rgba(251, 251, 253, 1);
+}

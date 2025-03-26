@@ -1,0 +1,128 @@
+.searchContent-left {
+    height: calc(100vh - 60px - 50px);
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    /* width: 15%; */
+    background-color: #fff;
+    height: fit-content;
+    flex-shrink: 0;
+    max-height: 800px;
+  }
+  .searchContent-left-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .Filters-ResetAll {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    cursor: pointer;
+    color: rgba(26, 130, 255, 1);
+  }
+  .searchfilter-options {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: black;
+    font-family: manrope;
+    font-size: 18px;
+  }
+  .searchfilter-section {
+    width: 100%;
+  }
+  .searchfilter-section h5 {
+    margin-bottom: 5px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+  }
+  .subject-area-search {
+    width: 100%;
+  }
+  .subject-area-search h5 {
+    margin-bottom: 5px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+  }
+  .subject-area-search label{
+      display: flex;
+      font-family: Manrope;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      margin: 3% 0;
+  }
+  
+  .biorxiv-filters,.biorxiv-type-filters,.pubmed-filters {
+    width: 100%;
+  }
+  .biorxiv-filters h6,.biorxiv-type-filters h6,.pubmed-filters h6,.plos-filters h6{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  .biorxiv-filters label,.pubmed-filters label{
+      display: flex;
+      font-family: Manrope;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      margin: 3% 0;
+  }
+  label input{
+    margin: 0 3px 0 0;
+  }
+  .plos-filters {
+    width: 100%;
+  }
+  .plos-filters h6 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+  }
+  .plos-filters label{
+      display: flex;
+      font-family: Manrope;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      margin: 3% 0;
+  }
+
+  
+  .searchfilter-section label {
+    display: flex;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    margin: 3% 0;
+  }
+  .searchfilter-section label input[type="checkbox"] {
+    padding-right: 5%;
+  }
+  /* .searchfilter-options-dropdown {
+    margin-bottom: 10%;
+  } */

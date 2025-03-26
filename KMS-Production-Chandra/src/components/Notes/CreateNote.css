@@ -1,0 +1,234 @@
+.notes {
+  border-radius: 16px;
+  opacity: 0px;
+  border: 1px solid rgba(235, 235, 243, 1);
+  background: rgba(251, 251, 253, 1);
+}
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(254, 118, 117, 0.7) -21.07%,
+    rgba(204, 129, 185, 0.7) 37.85%,
+    rgba(26, 168, 210, 0.7) 97.5%,
+    rgba(76, 210, 217, 0.7) 151.24%
+  );
+}
+.note-taking {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(235, 235, 243, 1);
+  border: 1px soild rgba(235, 235, 243, 1);
+  flex: 1;
+  border: none;
+  padding: 3%;
+  outline: none;
+  background: transparent;
+  resize: none;
+  font-size: 14px;
+  font-family: Manrope;
+  overflow-y: auto;
+  cursor: text;
+  margin-bottom: 4px;
+  text-align: start;
+  border-radius: 5px;
+}
+.create-note__form {
+  display: flex;
+  flex-direction: column;
+  /* max-height: 41vh; */
+}
+.note-input {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(251, 251, 253, 1);
+  border: 1px solid #ebebf3;
+  padding: 3%;
+  outline: none;
+  resize: none;
+  font-size: 14px;
+  font-family: Manrope;
+}
+.close-button {
+  background-color: blueviolet;
+}
+.dropdown {
+  width: 100%; /* Fallback */
+  width: -webkit-fill-available;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 4px;
+  background: rgba(251, 251, 253, 1);
+  position: absolute;
+  z-index: 1000;
+}
+.dropdown-button-group {
+  width: 100%;
+  text-align: start;
+  margin: 0 auto;
+  gap: 5px;
+  background: rgba(251, 251, 253, 1);
+}
+.dropdown-button-noteslist {
+  width: 100%;
+  color: #1a82ff;
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 15px;
+  text-align: start;
+  display: flex;
+  align-items: center;
+}
+.dropdown-button-deletenotes {
+  width: 100%;
+  color: #1a82ff;
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: start;
+}
+.dropdown-button-noteslist:hover,
+.dropdown-button-deletenotes:hover {
+  background-color: rgba(235, 235, 243, 0.5);
+}
+.dots {
+  font-size: 28px;
+  color: black;
+}
+.notes-cancel-button {
+  background-color: transparent;
+  border: none;
+  /* padding: 8px; */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cancel-button svg {
+  font-size: 20px;
+  padding: 10px 0px 0px 10px;
+  /* width: 24px;
+      height: 24px; */
+}
+.dropdown-toggle {
+  color: #1a82ff;
+  padding: 10px 0px 0px 10px;
+}
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(251, 251, 253, 1);
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.toolbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.toolbar button:hover {
+  background-color: #e2e2e2;
+  border-radius: 4px;
+}
+.note-save-button {
+  margin: 2%;
+  font-size: 16px;
+
+  height: 30px;
+  color: white;
+
+  border-radius: 8px;
+}
+.custom-ordered-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  counter-reset: myCounter;
+}
+
+.custom-ordered-list li {
+  counter-increment: myCounter;
+}
+
+.custom-ordered-list li::before {
+  content: counter(myCounter) ") ";
+}
+.note-taking ol {
+  margin: 0px 0px 0px 16px;
+  padding: 0;
+}
+.note-taking ul {
+  margin: 0px 0px 0px 16px;
+  padding: 0;
+}
+.note-taking:empty:before {
+  content: attr(placeholder);
+  color: #aaa;
+  pointer-events: none;
+}
+.note-taking p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+.share-message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1000;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+.tooltip{
+  background-color: #ffc03f;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1),
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.saving-icon {
+  animation: spin 1s linear infinite;
+}

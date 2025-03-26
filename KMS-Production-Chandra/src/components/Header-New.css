@@ -1,0 +1,228 @@
+.Navbar-Header {
+  /* margin: 4px 0; */
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  min-width: 100%;
+}
+
+.Navbar-Header-Items {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 15px;
+}
+
+.Navbar-Header-Link {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.Navbar-Header-Link.active-link::after {
+  content: "";
+  position: absolute;
+  left: 5%;
+  bottom: -5px;
+  width: 50%;
+  height: 2px;
+  background-color: #007bff;
+}
+
+.Search-nav-logo {
+  height: 60px;
+  display: flex;
+}
+
+.line-between {
+  height: 30px;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px;
+}
+
+.line-in-between {
+  height: 20px;
+  width: 1px;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.logo-descreption {
+  height: 45px;
+  text-align: start;
+}
+
+.logo-descreption p {
+  color: rgba(48, 91, 165, 1);
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0;
+  background: -webkit-linear-gradient(180deg, #fe7675 0%, #19a8d2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0;
+}
+
+.logo-descreption span {
+  font-size: 18px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(180deg, #fe7675 0%, #19a8d2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Search-nav-login {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 0 15px 0 0;
+}
+.confirmlogout-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1500; /* Higher than popup-menu */
+}
+
+/* Confirmation Popup */
+.confirmlogout-popup {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 300px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.confirmlogout-popup p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.confirmlogout-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.confirm-logout,
+.cancel-logout {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  border: 1px solid #00000012;
+  background: rgba(234, 234, 236, 1);
+  transition: background-color 0.3s ease;
+
+}
+
+.confirm-logout {
+  background-color: #dc3545; /* Bootstrap's danger color */
+  color: #fff;
+}
+
+.confirm-logout:hover {
+  background-color: #c82333;
+}
+
+.confirm-logout {
+  background-color: #6c757d; /* Bootstrap's secondary color */
+  color: #fff;
+}
+
+.cancel-logout:hover {
+  background-color: rgba(237, 237, 237, 1);
+}
+
+@media (min-width: 0px) and (max-width:576px){
+  .logo-descreption {
+    height: auto;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-descreption p{
+     font-size: 0.5rem;
+  }
+  .logo-descreption span{
+    font-size: 0.5rem;
+  }
+  .Navbar-Header {
+    margin: 0px;
+    height: auto;
+    justify-content: space-around;
+  }
+  .Search-nav-logo {
+    height: 6vw;
+    display: flex;
+  }
+  .Navbar-Header-Items{
+    gap: 5px;
+  }
+  .Search-nav-login{
+    /* padding: 0; */
+    gap: 5px;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .Navbar-Header {
+    margin: 0px;
+  }
+  .Search-nav-logo {
+    height: 6vw;
+    display: flex;
+  }
+  .logo-descreption {
+    height: auto;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-descreption p {
+    font-size: 0.7rem;
+  }
+  .logo-descreption span {
+    font-size: 0.7rem;
+  }
+  .Navbar-Header-Items {
+    /* padding: 0 6px; */
+    gap: 5px;
+  }
+  .Search-nav-login {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* padding: 0; */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1366px) {
+  .Navbar-Header {
+    margin: 0px;
+  }
+  .Search-nav-logo {
+    height: 45px;
+    display: flex;
+  }
+  .logo-descreption p {
+    font-size: 16px;
+  }
+  .logo-descreption span {
+    font-size: 16px;
+  }
+  .Navbar-Header-Items {
+    /* padding: 0 15px; */
+  }
+}

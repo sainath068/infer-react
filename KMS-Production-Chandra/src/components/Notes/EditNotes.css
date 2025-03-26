@@ -1,0 +1,361 @@
+.edit-note {
+  border-radius: 15px;
+  border: 1px solid #ebebf3;
+  background: rgba(251, 251, 253, 1);
+}
+
+.edit-note__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(235, 235, 243, 1);
+  padding: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(254, 118, 117, 0.7) -21.07%,
+    rgba(204, 129, 185, 0.7) 37.85%,
+    rgba(26, 168, 210, 0.7) 97.5%,
+    rgba(76, 210, 217, 0.7) 151.24%
+  );
+}
+
+.edit-back-button {
+  color: #1a82ff;
+  font-size: 20px;
+  background: none;
+  padding-top: 5px;
+  width: 10%;
+  cursor: pointer;
+}
+
+.edit-save-button {
+  font-size: 17px;
+  height: 30px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-note__form {
+  display: flex;
+  flex-direction: column;
+  /* min-height: 15vh; */
+  /* max-height: 40vh; */
+}
+
+.edit-note__title {
+  width: 100%;
+  background: rgba(251, 251, 253, 1);
+  box-sizing: border-box;
+  color: black;
+  border: none;
+  padding: 3%;
+  outline: none;
+  font-size: 14px;
+  font-family: manrope;
+  border: 1px solid #ebebf3;
+}
+.tooltip {
+  position: absolute;
+  /* transform-origin: top left; */
+  /* top: 70%;
+  left: 70px; */
+  background: #ffc03f;
+  color: #fff;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-top: 5px;
+  white-space: nowrap;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.input-container{
+  position: relative;
+  width: 100%;
+}
+.tooltip:before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 10px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #ffc107;
+}
+
+.edit-note__details {
+  width: 100%;
+  height: 49.5vh;
+  box-sizing: border-box;
+  border: none;
+  padding: 3%;
+  outline: none;
+  resize: none;
+  font-size: 14px;
+  font-family: Manrope;
+  overflow-y: auto;
+  text-align: start;
+}
+.edit-note__details:empty::before {
+  content: "Take your note...";
+  color: #aaa;
+  font-style: italic;
+}
+.edit-note__details ol {
+  margin: 0px 0px 0px 16px;
+  padding: 0;
+}
+.edit-note__details ul {
+  margin: 0px 0px 0px 16px;
+  padding: 0;
+}
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(251, 251, 253, 1);
+  padding: 5px 10px;
+  /* border-top: 1px solid rgba(235, 235, 243, 0.5); */
+border: 1px solid #EBEBF3;
+}
+
+.toolbar-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  margin-right: 5px;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+}
+
+.toolbar-button.active {
+  background-color: #1a82ff;
+  color: white;
+}
+
+.toolbar-button:hover {
+  background-color: #e0e0e0;
+}
+.editNotes-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: rgba(58, 58, 64, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+.editNotes-modal-content {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.editNotes-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.createNotes-modal-close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.editNotes-modal-body {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.share-note {
+  font-weight: 600;
+}
+.share-email {
+  text-align: start;
+}
+
+.editNotes-modal-copy-button {
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.editNotes-modal-copy-button:hover {
+  background-color: #1669c1;
+}
+.share-message {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 4px;
+}
+.editNotes-email {
+  gap: 10px;
+}
+.editNotes-Email {
+  display: grid;
+}
+.editNotes-copy {
+  display: grid;
+}
+.email-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.email-modal-content {
+  background: rgba(255, 255, 255, 1);
+  padding: 20px;
+  width: 30vw;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.email-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.email-modal-close-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.email-input,
+.subject-input,
+.recipient-input {
+  width: 100%;
+  padding: 10px 0 10px 6px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.subject-input {
+  resize: none; /* Prevent resizing */
+}
+
+.send-button {
+  background-color: #1a82ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.send-button:hover {
+  background-color: #155bb5;
+}
+
+.share-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  /* margin-left: auto; */
+  transition: color 0.2s ease;
+  border-radius: 4px;
+}
+
+.share-button:hover {
+  color: #1669c1;
+}
+
+.share-message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4caf50; /* Green background */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1000;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+.tooltip{
+  background-color: #ffc03f;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1),
+}
+
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.custom-ordered-list {
+  list-style-type: none;
+  counter-reset: myCounter;
+}
+
+.custom-ordered-list li {
+  counter-increment: myCounter;
+}
+.custom-ordered-list li::before {
+  content: counter(myCounter) ") ";
+}
+.edit-note__details {
+  border-radius: 5px;
+  padding: 10px;
+}
+@media (max-width:600px){
+  .email-modal-content{
+    width: 100%;
+  }
+}
+@media (min-width:600px) and (max-width:900px){
+  .email-modal-content{
+
+    width: 50%;
+  }
+}
